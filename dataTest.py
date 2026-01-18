@@ -14,7 +14,8 @@ print(f"checking:  {data_file_folder}")
 all_dataframes = []
 
 # fault tolerance
-# check if folder exist, if so, then forloop if file find it is xlsx files, concate
+# check if folder exist,
+# if so, then forloop if file find it is xlsx files, concate
 if os.path.exists(data_file_folder):
     for file in os.listdir(data_file_folder):
         if not file.endswith(".xlsx"):
